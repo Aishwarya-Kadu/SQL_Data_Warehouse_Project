@@ -20,5 +20,6 @@ The objective of this project is to design and implement a scalable Galaxy Schem
 - Integrated Development Environment (IDE): SQL Server Management Studio (SSMS)
 - Data Modeling: draw.io (Entity-Relationship Diagram)
 - Architecture Framework: Medallion Architecture
+- Version Control: Git and Github
 
 
