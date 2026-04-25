@@ -8,7 +8,7 @@ This is an end-to-end Galaxy Schema Data Warehouse that integrates siloed termin
 - [Data Overview](#Data-Overview)
 - [Architecture Framework](#Architecture-Framework)
 - [Data Modelling (ERD and Schema Design)](#Data-Modelling-(ERD-and-Schema-Design))
-- [Gold Layer: Data Dictionary and Business Logic](#Gold-Layer:-Data-Dictionary-and-Business-Logic)
+- [Gold Layer: Data Dictionary and Business Logic](#gold-layer-data-dictionary-and-business-logic)
 - [Key Strategic Insights](#Key-Strategic-Insights)
 - [How to run the project](#How-to-run-the-project)
 
