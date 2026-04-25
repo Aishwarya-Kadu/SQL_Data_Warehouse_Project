@@ -175,9 +175,22 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |moves_per_hour| Number of containers handled per hour|
 
 
+### Table Name: fact_customer_experience
+|Column Names| Description|
+|------------|------------|
+|feedback_id|Unique identifier and primary of fact table customer_experience|
+|shipping_line_sk|A surrogate foreign key that maps operational transactions of dimension table dim_shipping_lines|
+|vessel_sk| A surrogate foreign key that maps operational transactions of dimension table dim_vessels|
+|company_name|Unique identifier and primary of fact table customer_experience|
+|vessel_name|Name of the container ship|
+|satisfaction_score|Satisfaction rating ranging from 0 to 10 given by the shipping line company, with 0 as poor and 10 as best|
+|delay_complaint_flag|Boolean column with values 1, when the vessel departure gets delayed and 0 when vessel departs on time from port|
+|customer_sentiment|Calculated column with categories based on satisfaction score as Promoters (score 9 to 10, which are loyalists), Passives (score 7 to 8, which can be called as At-Risk Customers) and Detractors (score 0 to 6, which are unhappy customers)|
 
 
-
+### Table Name: fact_customer_experience
+|Column Names| Description|
+|------------|------------|
 
 
 
