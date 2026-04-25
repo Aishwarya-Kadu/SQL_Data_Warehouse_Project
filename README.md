@@ -138,6 +138,14 @@ This project follows Medallion Architecture to ensure data integrity, traaceabil
     - Data Integration: Merging disparate datasets (e.g., linking Vessel moves to Billing rates).
     - Data Modelling: Implementing a Galaxy Schema comprised of Dimension and Fact tables.
     - Aggregations: Calculating key performance indicators like Revenue, Equipment Utilization, and Move Velocity.
+
+## Data Modelling & ERD Design
+To support cross-functional analysis across operations, finance, and asset management, this project implements a Galaxy Schema (also known as a Fact Constellation). This design allows multiple Fact tables to share Conformed Dimensions, ensuring a "Single Version of Truth" across the entire terminal.
+
+#### The ERD Diagram
+<img width="1042" height="1662" alt="data model ss" src="https://github.com/user-attachments/assets/1ec0142c-73ba-4e56-8e89-5f144f2a5f8a" />
+
+
   
 
 
