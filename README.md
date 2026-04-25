@@ -3,14 +3,14 @@ This is an end-to-end Galaxy Schema Data Warehouse that integrates siloed termin
 
 
 ## Contents
-- [Project Overview](# Project-Overview)
-- Tools
-- Data Overview
-- Architecture Framework
-- Data Modelling (ERD and Schema Design)
-- Gold Layer: Data Dictionary and Business Logic
-- Key Strategic Insights (KPIs)
-- How to run the project
+- [Project Overview](#Project-Overview)
+- [Tools](#Tools)
+- [Data Overview](#Data-Overview)
+- [Architecture Framework](#Architecture-Framework)
+- [Data Modelling](ERD and Schema Design)(#Data-Modelling-(ERD-and-Schema-Design))
+- [Gold Layer: Data Dictionary and Business Logic](#Gold-Layer:-Data-Dictionary-and-Business-Logic)
+- [Key Strategic Insights](#Key-Strategic-Insights)
+- [How to run the project](#How-to-run-the-project)
 
 ## Project Overview
 This project simulates the development of a professional-grade Data Warehouse for a container terminal, bridging the gap between raw maritime operations and strategic business intelligence. By transforming fragmented logs from **Terminal Operating System (TOS)**, **Enterprise Resource Planning System (ERP)**, **Customer Relationship Management System (CRM)** and **Master Data logs** into a centralized Gaalxy Schema, the project enables real-time tracking of operational efficiency, revenue accuracy and asset health.
