@@ -146,13 +146,13 @@ To support cross-functional analysis across operations, finance, and asset manag
 <img width="1042" height="1662" alt="data model ss" src="https://github.com/user-attachments/assets/1ec0142c-73ba-4e56-8e89-5f144f2a5f8a" />
 
 ### Key Design Patterns
-- Galaxy Schema Architecture: Unlike a standard Star Schema with one central fact, this model features four distinct Fact tables (Moves, Revenue, Equipment, and Experience). This reflects a real-world enterprise environment where different business processes are analyzed simultaneously.
-- Conformed Dimensions: Dimensions such as dim_date and dim_vessels are shared across multiple Fact tables. This enables Cross-Fact Analysis (e.g., correlating Vessel Productivity with Total Revenue) without the risk of data duplication.
-- Surrogate Key Implementation: Every table in the Gold Layer utilizes Surrogate Keys (e.g., vessel_key, revenue_id). This strategy shields the warehouse from changes in source-system business keys and simplifies join logic within BI tools.
-- Granularity Control:
-   - Operations: Granularity is at the individual move level.
-   - Finance: Granularity is at the revenue transaction level, allowing for storage and handling fees to be audited separately.
-- Auditability: By including degenerate dimensions like move_id in the revenue fact table, the model maintains a clear "paper trail" from financial figures back to physical operational events.
+- **Galaxy Schema Architecture**: Unlike a standard Star Schema with one central fact, this model features four distinct Fact tables (Moves, Revenue, Equipment, and Experience). This reflects a real-world enterprise environment where different business processes are analyzed simultaneously.
+- **Conformed Dimensions:** Dimensions such as dim_date and dim_vessels are shared across multiple Fact tables. This enables Cross-Fact Analysis (e.g., correlating Vessel Productivity with Total Revenue) without the risk of data duplication.
+- **Surrogate Key Implementation:** Every table in the Gold Layer utilizes Surrogate Keys (e.g., vessel_key, revenue_id). This strategy shields the warehouse from changes in source-system business keys and simplifies join logic within BI tools.
+- **Granularity Control:**
+   - **Operations:** Granularity is at the individual move level.
+   - **Finance:** Granularity is at the revenue transaction level, allowing for storage and handling fees to be audited separately.
+- **Auditability:** By including degenerate dimensions like move_id in the revenue fact table, the model maintains a clear "paper trail" from financial figures back to physical operational events.
 
 
 
