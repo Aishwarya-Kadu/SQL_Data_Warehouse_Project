@@ -205,6 +205,29 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |daily_utilization_pct| The ratio of active operational hours to the total available 24-hour window, used to evaluate equipment efficiency and identify idle capacity. |
 
 
+### Table Name: fact_terminal_revenue
+|Column Names| Description|
+|------------|------------|
+|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
+|date-sk| A surrogate foreign key that maps operational transactions of dimension table dim_date|
+|vessel_sk|A surrogate foreign key that maps operational transactions of dimension table dim_vessels|
+|location_sk| A surrogate foreign key that maps operational transactions of dimension table dim_locations|
+|shipping_line_sk| A surrogate foreign key that maps operational transactions of dimension table dim_shipping_lines|
+|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
+|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
+|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
+|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
+
+
+
+
+
+
+
+
+
+
+
 
 
 
