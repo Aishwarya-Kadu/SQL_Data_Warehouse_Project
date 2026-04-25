@@ -275,6 +275,24 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |sla_category | A business-tier classification (Tier 1-5) derived from the priority level to standardize service quality expectations.|
 
 
+### Table Name: dim_vessels
+|Column Names| Description|
+|------------|------------|
+|vessel_sk|Surrogate primary key of dimension table dim_vessels.|
+|vessel_id|The unique natural identifier for the ship as assigned by the Terminal Operating System (TOS).|
+|vessel_name|The registered name of the vessel|
+|shipping_line_id|The foreign key linking the vessel to its operating carrier for fleet-level performance analysis.|
+|arrival_time_atb|The "Actual Time of Berthing" (ATB) marking the official start of the vessel's terminal operations.|
+|departure_time_atd|The "Actual Time of Departure" (ATD) marking the conclusion of cargo operations and vessel unberthing.|
+|terminal_id|The identifier for the specific port facility or terminal where the vessel called.|
+|port_stay_duration_hours|A calculated field measuring total turnaround time from arrival to departure to evaluate berth productivity.|
+|vessel_class|Categorizes ships into size classes (e.g., Post-Panamax, Feeder) to compare operational efficiency across different ship scales.|
+|vessel_status|A dynamic logic field indicating if the ship is currently 'At Berth', 'In Port', or has already 'Departed'.|
+
+
+
+
+
 
 
 
