@@ -13,3 +13,12 @@ This project simulates the development of a professional-grade Data Warehouse fo
 
 ### Objective
 The objective of this project is to design and implement a scalable Galaxy Schema data warehouse that transforms fragmented maritime operational logs into a centralized, audit-ready source of truth for optimizing port productivity and revenue assurance.
+
+
+## Tools and Technologies
+- Database Engine: Mirosoft SQL Server
+- Integrated Development Environment (IDE): SQL Server Management Studio (SSMS)
+- Data Modeling: draw.io (Entity-Relationship Diagram)
+- Architecture Framework: Medallion Architecture
+
+
