@@ -115,6 +115,9 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 ## Architecture Framework: Medallion Architecture
 This project follows Medallion Architecture to ensure data integrity, traaceability and high-performance reporting. By organising the data into three distinct layers, we transform raw, fragmented maritime logs into a refined 'Single Source of Truth'.
 
+<img width="1184" height="737" alt="High Level Architecture" src="https://github.com/user-attachments/assets/0d5b141b-d617-4433-9007-398734b5df2a" />
+
+
 ### Bronze Layer: Raw Staging
 - Object Type: Physical Tables
 - Loading Strategy: Full Load (Truncate and Insert)
@@ -155,7 +158,7 @@ To support cross-functional analysis across operations, finance, and asset manag
 - **Auditability:** By including degenerate dimensions like move_id in the revenue fact table, the model maintains a clear "paper trail" from financial figures back to physical operational events.
 
 
-## Gold Layer: Data DIctionary and Business Logic
+## Gold Layer: Data Dictionary and Business Logic
 The Gold Layer is the final consumption layer, consisting of SQL Views that transform cleaned data into actionable insights. This layer implements a Galaxy Schema designed for high-performance reporting in tools like Power BI or Tableau.
   
 ### Table Name: fact_container_moves
