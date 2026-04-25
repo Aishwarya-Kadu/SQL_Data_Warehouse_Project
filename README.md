@@ -80,3 +80,22 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |effective_date| The date from when the new price is effective|
 
 
+### Table Name: ERP_Equipment_Logs
+|Column Names| Description|
+|------------|------------|
+|crane_id|Identifier for a particular container handling crane|
+|equipment_type| Type of container handling crane|
+|date| Equipment activity date|
+|crane_operation_hours| Number of hours the crane operated a particular day|
+|fuel_consumption_litres| Number of litres of diesel consumed by the crane on a particular day|
+|fuel_consumption_kWh| Amount of electricity consumed by the crane on a particular day|
+|maintenance_status| Maintenance status of crane whether Good, Under Repair or Due|
+|operator_id| Unique id of the operator employee assigned to them (identical to employee id)|
+|number_of_moves| Number of moves done by the crane for a particular day|
+
+
+
+
+
+
+
