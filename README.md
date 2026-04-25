@@ -26,9 +26,11 @@ The objective of this project is to design and implement a scalable Galaxy Schem
 ## Data Overview
 This data warehouse is built from seven CSV datasets which are sourced from Terminal Operating System (TOS), Enterprise Resource Planning System (ERP), Customer Relationship Management System (CRM) and Master Data file.
 
-### TOS_Vessel_Schedule
+### Table Name: TOS_Vessel_Schedule
 |Column Names| Description|
 |------------|------------|
-|vessel_id| Unique identifier for ships|
+|vessel_id| Unique identifier for vessel|
+|vessel_name| Name of the vessel|
+|
 
 
