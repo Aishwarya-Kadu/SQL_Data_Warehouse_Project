@@ -290,6 +290,27 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |vessel_status|A dynamic logic field indicating if the ship is currently 'At Berth', 'In Port', or has already 'Departed'.|
 
 
+## Key Strategic Insights
+The Gold Layer Galaxy Schema enables the terminal to answer critical business questions through cross-functional data correlation. Below are the primary strategic insights derived from this model:
+
+#### 1. Operational Efficiency & Asset Optimization:
+- **Vessel Turnaround Analysis:** By correlating vessel_class with port_stay_duration_hours, we can identify if 'Post-Panamax' vessels are experiencing disproportionate delays compared to 'Feeder' vessels.
+- **Asset Availability vs. Utilization:** By comparing maintenance_status (Downtime) against daily_utilization_pct, the terminal can identify the 'Top 10%' of overworked assets. This allows for proactive maintenance scheduling for high-utilization units before they reach a failure point and create operational bottlenecks.
+
+
+#### 2. Revenue Leakage & Financial Recovery
+- **Dwell-Time Penalties:** The storage_revenue logic identifies 'long-stay' containers that exceed the 3-day grace period. This highlights specific shipping lines that are using the yard as a warehouse, allowing for targeted tariff adjustments.
+- **SLA Profitability:** By joining fact_terminal_revenue with dim_shipping_lines, we can determine if 'Platinum' tier customers (who demand the highest resource intensity) are providing a proportional return on investment (ROI).
+
+
+#### 3. Customer Sentiment & Retention
+- **Performance vs. Loyalty:** We can statistically analyze if a shift in Customer Sentiment (from Promoter to Detractor) correlates with a decrease in moves_per_hour or an increase in port_stay_duration_hours.
+- **Retention Strategy**: By identifying 'Detractors' among high-volume shipping lines, the commercial team can proactively intervene with service recovery plans before contracts are up for renewal.
+
+
+#### 4. Resource Allocation & Planning
+- **Vessel-Driven Workload Forecasting:** By joining dim_vessels with dim_date, the terminal can identify 'Peak Arrival Days'. This allows management to optimize staffing levels for crane operators and yard equipment during high-volume windows.
+- **Infrastructure Readiness:** Using the is_reefer_eligible flag in the locations dimension, the terminal can perform 'Gap Analysis' between the number of arriving refrigerated units (via vessel manifests) and the available powered slots in the yard, preventing cargo spoilage.
 
 
 
