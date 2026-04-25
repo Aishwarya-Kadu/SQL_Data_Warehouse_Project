@@ -124,7 +124,12 @@ This project follows Medallion Architecture to ensure data integrity, traaceabil
 - Transformation Logic:
    - Deduplication: Removing duplicate records based on Primary Keys.
    - Data Hygiene: Trimming unwanted spaces and handling NULL, erroneous or orphaned values.
-   - Logical Validation: Ensuring data integrity (e.g. verifying start time value is before end time, and ensuring all currency/financial values are positive)
+   - Logical Validation: Ensuring data integrity (e.g. verifying start time value is before end time, and ensuring all currency/financial values are positive).
+   - Standardization: Mapping inconsistent source values to industry-standard formats.
+
+ ### Gold Layer: Business-Ready Modelling
+ - Object Type: SQL Views
+ - Objective: To provide high-performance, integrated data optimized for reporting, visualization, and strategic analysis.
 
 
 
