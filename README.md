@@ -130,6 +130,12 @@ This project follows Medallion Architecture to ensure data integrity, traaceabil
  ### Gold Layer: Business-Ready Modelling
  - Object Type: SQL Views
  - Objective: To provide high-performance, integrated data optimized for reporting, visualization, and strategic analysis.
+ - Description: This is the final consumption layer. Here, we apply complex business rules and logic to perform:
+    - Data Integration: Merging disparate datasets (e.g., linking Vessel moves to Billing rates).
+    - Data Modelling: Implementing a Galaxy Schema comprised of Dimension and Fact tables.
+    - Aggregations: Calculating key performance indicators like Revenue, Equipment Utilization, and Move Velocity.
+  
+
 
 
 
