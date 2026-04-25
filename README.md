@@ -70,6 +70,13 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |priority_level|Assigned levels to shipping line based on annual volume and SLA agreements. Priority levels are Bronze, Silver, Gold and Platinum|
 
 
-### Table Name: CRM_Shipping_Lines
+### Table Name: ERP_Billing_Rates
 |Column Names| Description|
 |------------|------------|
+|rate_id| Unique identifier for a record in the table|
+|move_type| Type of container move whether Loading or Discharge|
+|container_size| Size of container whether 20ft or 40ft|
+|unit_price_usd| Price of handling one container. Currency used is United States Dollar|
+|effective_date| The date from when the new price is effective|
+
+
