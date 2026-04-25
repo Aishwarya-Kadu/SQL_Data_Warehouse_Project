@@ -42,7 +42,7 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |------------|------------|
 |move_id| Unique primary key for every physical action|
 |container_id| Unique identifier for the box|
-|vessel_id| | Identifier for container ship|
+|vessel_id| |Identifier for container ship|
 |crane_id| Identifier for container handling cranes|
 |container_size| Size of container whether 20ft or 40ft|
 |move_type| Type of move whether Loading or Discharge|
