@@ -188,9 +188,21 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |customer_sentiment|Calculated column with categories based on satisfaction score as Promoters (score 9 to 10, which are loyalists), Passives (score 7 to 8, which can be called as At-Risk Customers) and Detractors (score 0 to 6, which are unhappy customers)|
 
 
-### Table Name: fact_customer_experience
+### Table Name: fact_equipment_performance
 |Column Names| Description|
 |------------|------------|
+|record_id| Unique indentifier and primary key of fact table equipment_performance|
+|equipment_sk| A surrogate foreign key that maps operational transactions of dimension table dim_equipment|
+|date_sk| A surrogate foreign key that maps operational transactions of dimension table dim_date|
+|crane_id| Identifier for a particular container handling crane|
+|crane_operation_hours| | Number of hours the crane operated a particular day|
+|fuel_consumption_litres| Number of litres of diesel consumed by the crane on a particular day|
+|fuel_consumption_kWh| Amount of electricity consumed by the crane on a particular day|
+|number_of_moves| Total number of moves done by the crane for a particular day|
+|maintenance_status| Maintenance status of crane whether Good, Under Repair or Due|
+|moves_per_hour| Number of containers handled per hour, which is the ratio of number_of_moves and crane_operation_hours|
+|fuel_per_move| Amount of fuel consumed to handle one container which is ratio of fuel consumed and number of moves|
+|daily_utilization_pct| The ratio of active operational hours to the total available 24-hour window, used to evaluate equipment efficiency and identify idle capacity. |
 
 
 
