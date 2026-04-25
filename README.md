@@ -155,8 +155,33 @@ To support cross-functional analysis across operations, finance, and asset manag
 - **Auditability:** By including degenerate dimensions like move_id in the revenue fact table, the model maintains a clear "paper trail" from financial figures back to physical operational events.
 
 
-
+## Gold Layer: Data DIctionary and Business Logic
+The Gold Layer is the final consumption layer, consisting of SQL Views that transform cleaned data into actionable insights. This layer implements a Galaxy Schema designed for high-performance reporting in tools like Power BI or Tableau.
   
+### Table Name: fact_container_moves
+|Column Names| Description|
+|------------|------------|
+|vessel_sk| A surrogate foreign key that maps operational transactions of dimension table dim_vessels|
+|location_sk| A surrogate foreign key that maps operational transactions of dimension table dim_locations|
+|equipment_sk| A surrogate foreign key that maps operational transactions of dimension table dim_equipment|
+|shipping_line_sk| A surrogate foreign key that maps operational transactions of dimension table dim_shipping_lines|
+|date_sk| A surrogate foreign key that maps operational transactions of dimension table dim_date|
+|move_id| Unique identifier and primary key of the fact table|
+|container_id| Unique identifier for the box|
+|move_type| Type of move whether Loading or Discharge|
+|container_size| Size of container whether 20ft or 40ft|
+|move_duration_minutes| Time taken in minutes to handle one container|
+|move_count| Number of containers handled|
+|moves_per_hour| Number of containers handled per hour|
+
+
+
+
+
+
+
+
+
 
 
 
