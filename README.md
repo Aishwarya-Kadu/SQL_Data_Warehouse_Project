@@ -42,7 +42,7 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |------------|------------|
 |move_id| Unique primary key for every physical action|
 |container_id| Unique identifier for the box|
-|vessel_id| |Identifier for container ship|
+|vessel_id|Identifier for container ship|
 |crane_id| Identifier for container handling cranes|
 |container_size| Size of container whether 20ft or 40ft|
 |move_type| Type of move whether Loading or Discharge|
@@ -55,11 +55,21 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |Column Names| Description|
 |------------|------------|
 |feedback_id| Unique identifier for feedbacks received|
-|shipping_line_id| Unique identifier for shipping line companies|
+|shipping_line_id| Identifier for shipping line companies|
 |vessel_id| Identifier for container ship|
 |delay_complaint_flag| Boolean column with values 1, when the vessel departure gets delayed and 0 when vessel departs on time from port|
 |satisfaction_score| Satisfaction rating ranging from 0 to 10 given by the shipping line company, with 0 as poor and 10 as best|
 
 
+### Table Name: CRM_Shipping_Lines
+|Column Names| Description|
+|------------|------------|
+|shipping_line_id|Unique identifier for shipping line companies|
+|company_name| Name of the shipping line company|
+|contract_start_date| Date when the container terminal entered into partnership with the shipping line company|
+|priority_level|Assigned levels to shipping line based on annual volume and SLA agreements. Priority levels are Bronze, Silver, Gold and Platinum|
 
 
+### Table Name: CRM_Shipping_Lines
+|Column Names| Description|
+|------------|------------|
