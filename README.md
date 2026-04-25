@@ -112,6 +112,10 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 This project follows Medallion Architecture to ensure data integrity, traaceability and high-performance reporting. By organising the data into three distinct layers, we transform raw, fragmented maritime logs into a refined 'Single Source of Truth'.
 
 ### Bronze Layer: Raw Staging
+- Object Type: Physical Tables
+- Loading Strategy: Full Load (Truncate and Insert)
+- Objective: To serve as a landing zone for raw source data, ensuring 100% traceability and providing foundation for debugging the upstream data issues
+- 
 
 
 
