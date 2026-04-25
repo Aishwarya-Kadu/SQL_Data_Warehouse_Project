@@ -115,7 +115,16 @@ This project follows Medallion Architecture to ensure data integrity, traaceabil
 - Object Type: Physical Tables
 - Loading Strategy: Full Load (Truncate and Insert)
 - Objective: To serve as a landing zone for raw source data, ensuring 100% traceability and providing foundation for debugging the upstream data issues
-- 
+- Description: Raw CSV files from CRM, TOS, ERP and MD are ingested exactly as they exist in the source systems. No transformation is applied at this stage to maintain a historical record of raw input.
+
+### Silver Layer: Cleaned and Standardized
+- Object Type: Physical Tables
+- Loading Strategy: Full Load (Truncate and Insert)
+- Objective: To provide a reliable, intermediate layer where data is 'cleansed' and validated for cross-functional consistency.
+- Transformation Logic:
+   - Deduplication: Removing duplicate records based on Primary Keys.
+   - Data Hygiene: Trimming unwanted spaces and handling NULL, erroneous or orphaned values.
+   - Logical Validation: Ensuring data integrity (e.g. verifying start time value is before end time, and ensuring all currency/financial values are positive)
 
 
 
