@@ -250,13 +250,29 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 
 
 
+### Table Name: dim_locations
+|Column Names| Description|
+|------------|------------|
+|location_sk|Surrogate primary key of dimension table dim_locations|
+|location_id| Unique identifier for the location at the container terminal|
+|location_name| The specific identifier for a yard block or berth position used to pinpoint container placement.|
+|location_type| Categorizes the area by its operational function, such as Berth or Yard.|
+|capacity_category|Defines the storage volume limit (standard block, or non-storage operational area) to manage yard density and prevent congestion. |
+|dwell_priority|A ranking used to determine which locations are reserved for fast-moving vs. long-stay cargo. |
+|is_reefer_eligible| A boolean flag indicating if the location is equipped with electrical power points for refrigerated containers.|
+|zone_priority|A strategic value used to optimize equipment travel distance by prioritizing zones closest to the vessel or gate. |
 
 
-
-
-
-
-
+### Table Name: dim_shipping_lines
+|Column Names| Description|
+|------------|------------|
+|shipping_line_sk|Surrogate primary key of dimension table dim_shipping_lines.|
+|shipping_line_id |The original natural key from the source CRM system, maintained for cross-system data reconciliation. |
+|company_name |The legal entity name of the carrier, defaulted to "Generic Carrier" if not provided in the source. |
+|parent_company| Identifies the larger global conglomerate or alliance (e.g., Maersk, MSC) for group-level volume tracking.|
+|contract_start_date|The official commencement date of the terminal service agreement, used to track customer longevity. |
+|partnership_years |A calculated field measuring the duration of the business relationship to identify long-term strategic partners. |
+|sla_category | A business-tier classification (Tier 1-5) derived from the priority level to standardize service quality expectations.|
 
 
 
