@@ -107,6 +107,8 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |zone_priority| Defines whether a particular location is high priority or not|
 
 
+## The Architecture
+
 
 
 
