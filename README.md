@@ -94,6 +94,17 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |number_of_moves| Number of moves done by the crane for a particular day|
 
 
+### Table Name: MD_Reference_Location
+|Column Names| Description|
+|------------|------------|
+|location_id| Unique identifier for the location at the container terminal|
+|location_name| Name of the location|
+|location_type| Type of location|
+|country| Name of country where the port is located|
+|max_capacity_teu| Maximum teu's(twenty equivalent unit) which a location is able to store|
+|average_dwell_target_time| Number of hours that a container can be stored|
+|is_reefer_eligible| Defines whether a location can store reefer containers|
+|zone_priority| Defines whether a particular location is high priority or not|
 
 
 
