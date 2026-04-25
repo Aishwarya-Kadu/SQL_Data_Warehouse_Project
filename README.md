@@ -213,10 +213,31 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |vessel_sk|A surrogate foreign key that maps operational transactions of dimension table dim_vessels|
 |location_sk| A surrogate foreign key that maps operational transactions of dimension table dim_locations|
 |shipping_line_sk| A surrogate foreign key that maps operational transactions of dimension table dim_shipping_lines|
-|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
-|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
-|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
-|revenue_id| Unique identifier and primary key of fact table terminal_revenue|
+|container_id| Unique identifier for the box|
+|move_id| Unique identifier for the physical move made|
+|move_type| Type of move whether Loading or Discharge|
+|container_size| Unique identifier and primary key of fact table terminal_revenue|
+|handling_revenue| The fixed service fee per container move, derived from the ERP billing tariff based on container size and move type.|
+|storage_revenue| The penalty fee for cargo exceeding the 3-day grace period, calculated as $50 for each additional day of yard dwell time.|
+|total_revenue| The cumulative income per transaction, representing the sum of both operational handling fees and applicable storage penalties.|
+
+
+### Table Name: dim_date
+|Column Names| Description|
+|------------|------------|
+|date_sk| Surrogate primary key of dimension table dim_date.|
+|full_date| Date value in standard format YYYY-MM-DD|
+|year| The four-digit calendar year used for high-level annual trend analysis and year-over-year comparisons.|
+|month_number|The numerical representation of the month (1-12), essential for chronological sorting in reports.|
+|month_name| The full text name of the month (e.g., January) used as a categorical label in visualizations.|
+|month_year label|A concatenated string (e.g., "Jan 2026") providing a clean, readable label for time-series axis formatting. |
+|day_of_the_month|The day of the month (1-31), used to analyze daily operational peaks and month-end fluctuations.|
+|day_name|The name of the day (e.g., Monday), used to identify weekly patterns in vessel arrivals and gate traffic. |
+|day_of_week_number| A numerical index for days (e.g., 1-7), enabling custom sorting of charts starting from Sunday or Monday.|
+|is_weekend|A boolean flag (1/0) used to segment operational productivity between weekdays and weekend shifts. |
+|quarter|The calendar quarter (Q1-Q4), used for quarterly business reviews and financial reporting cycles. |
+|fiscal_year|The adjusted financial year based on organizational accounting cycles, often used for budget tracking. |
+
 
 
 
