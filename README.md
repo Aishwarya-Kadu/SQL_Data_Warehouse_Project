@@ -3,7 +3,7 @@ This is an end-to-end Galaxy Schema Data Warehouse that integrates siloed termin
 
 
 ## Contents
-- [Project Overview](# Project Overview)
+- [Project Overview](# Project-Overview)
 - Tools
 - Data Overview
 - Architecture Framework
