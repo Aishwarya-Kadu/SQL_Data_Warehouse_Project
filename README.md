@@ -321,7 +321,17 @@ Run the script '1.Create DB and Schema.sql' to initialize the Database and the t
 
 Step 2: Bronze Layer (Ingestion)
 Create the landing tables and the ingestion logic.
-1. Run '2. Bronze Layer Table Creation.sql' to create the raw landing zone.
+- Run '2. Bronze Layer Table Creation.sql' to create the raw landing zone.
+- Execute '3. Stored Procedure to load Bronze Layer.sql'
+
+Step 3: Silver Layer (Cleansing & Transformation)
+- Validation: Run '4. Data Quality Checks.sql' to identify nulls, duplicates, or format inconsistencies in the raw data.
+- Schema Creation: Run '5. Silver Layer Table Creation.sql'
+- Transformation: Execute '6. Cleaning and loading silver layer.sql'. This script applies the cleaning logic (Standardizing dates, handling nulls, and trimming strings) and moves data from Bronze to Silver. 
+
+Step 4: Gold Layer (Business Logic & Analytics)
+- Physical Dimension: Run '7. Gold Layer Table Creation.sql' to generate the static Date Dimension.
+- Semantic Layer: Run '8. Views in Gold Layer.sql' o create the final Galaxy Schema. These views contain the core business logic, including NPS Sentiment, Revenue Calculations, and Vessel Performance metrics.
 
 
 
