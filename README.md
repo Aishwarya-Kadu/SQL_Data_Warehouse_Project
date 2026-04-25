@@ -8,7 +8,7 @@ This is an end-to-end Galaxy Schema Data Warehouse that integrates siloed termin
 - Data Overview
 
 ## Project Overview
-This project simulates the development of a professional-grade Data Warehouse for a container terminal, bridging the gap between raw maritime operations and strategic business intelligence. By transforming fragmented logs from Terminal Operating System (TOS), Enterprise Resource Planning System (ERP), Customer Relationship Management System (CRM) and Master Data logs into a centralized Gaalxy Schema, the project enables real-time tracking of operational efficiency, revenue accuracy and asset health.
+This project simulates the development of a professional-grade Data Warehouse for a container terminal, bridging the gap between raw maritime operations and strategic business intelligence. By transforming fragmented logs from **Terminal Operating System (TOS)**, **Enterprise Resource Planning System (ERP)**, **Customer Relationship Management System (CRM)** and **Master Data logs** into a centralized Gaalxy Schema, the project enables real-time tracking of operational efficiency, revenue accuracy and asset health.
 
 
 ### Objective
@@ -21,5 +21,14 @@ The objective of this project is to design and implement a scalable Galaxy Schem
 - Data Modeling: draw.io (Entity-Relationship Diagram)
 - Architecture Framework: Medallion Architecture
 - Version Control: Git and Github
+
+
+## Data Overview
+This data warehouse is built from seven CSV datasets which are sourced from Terminal Operating System (TOS), Enterprise Resource Planning System (ERP), Customer Relationship Management System (CRM) and Master Data file.
+
+### TOS_Vessel_Schedule
+|Column Names| Description|
+|------------|------------|
+|vessel_id| Unique identifier for ships|
 
 
