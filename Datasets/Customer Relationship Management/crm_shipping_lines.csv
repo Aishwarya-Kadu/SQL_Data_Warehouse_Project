@@ -1,0 +1,101 @@
+shipping_line_id,company_name,contract_start_date,priority_level
+SL001,MSC - Branch 1,2015-05-14,Silver
+SL002,ONE - Branch 2,2016-09-16,Bronze
+SL003,ZIM - Branch 3,2017-03-21,Silver
+SL004,Cosco - Branch 4,2016-10-11,Silver
+SL005,MSC - Branch 5,2015-12-27,Bronze
+SL006,Wan Hai - Branch 6,2018-08-30,Silver
+SL007,Cosco - Branch 7,2023-01-27,Silver
+SL008,Hapag-Lloyd - Branch 8,2017-03-31,Bronze
+SL009,MSC - Branch 9,2016-07-27,Platinum
+SL010,Yang Ming - Branch 10,2020-03-24,Silver
+SL011,Maersk - Branch 11,2021-11-29,Platinum
+SL012,Evergreen - Branch 12,2016-05-25,Platinum
+SL013,CMA CGM - Branch 13,2017-04-22,Platinum
+SL014,Cosco - Branch 14,2018-01-03,Bronze
+SL015,Evergreen - Branch 15,2017-11-24,Platinum
+SL016,Maersk - Branch 16,2016-01-20,Silver
+SL017,MSC - Branch 17,2018-01-28,Gold
+SL018,Yang Ming - Branch 18,2018-04-29,Silver
+SL019,Wan Hai - Branch 19,2022-08-04,Gold
+SL020,MSC - Branch 20,2015-01-21,Bronze
+SL021,Maersk - Branch 21,2017-11-05,Gold
+SL022,Cosco - Branch 22,2019-01-21,Silver
+SL023,ZIM - Branch 23,2019-03-04,Bronze
+SL024,Maersk - Branch 24,2015-05-15,Bronze
+SL025,MSC - Branch 25,2021-02-02,Silver
+SL026,Cosco - Branch 26,2019-04-17,Platinum
+SL027,Cosco - Branch 27,2015-06-11,Platinum
+SL028,Cosco - Branch 28,2019-01-10,Silver
+SL029,Cosco - Branch 29,2020-08-11,Bronze
+SL030,MSC - Branch 30,2021-05-16,Platinum
+SL031,CMA CGM - Branch 31,2016-04-06,Platinum
+SL032,Hapag-Lloyd - Branch 32,2019-11-15,Platinum
+SL033,Evergreen - Branch 33,2020-12-26,Bronze
+SL034,ONE - Branch 34,2020-08-01,Gold
+SL035,ONE - Branch 35,2021-10-23,Gold
+SL036,Yang Ming - Branch 36,2017-12-01,Gold
+SL037,CMA CGM - Branch 37,2017-04-01,Platinum
+SL038,ZIM - Branch 38,2018-07-04,Silver
+SL039,CMA CGM - Branch 39,2017-05-18,Bronze
+SL040,MSC - Branch 40,2015-04-06,Silver
+SL041,MSC - Branch 41,2019-01-08,Bronze
+SL042,ZIM - Branch 42,2019-07-29,Gold
+SL043,Hapag-Lloyd - Branch 43,2018-09-11,Bronze
+SL044,Evergreen - Branch 44,2015-09-01,Bronze
+SL045,ONE - Branch 45,2019-05-21,Bronze
+SL046,ZIM - Branch 46,2017-08-20,Gold
+SL047,Hapag-Lloyd - Branch 47,2015-12-21,Gold
+SL048,Evergreen - Branch 48,2016-04-15,Bronze
+SL049,Wan Hai - Branch 49,2022-09-17,Silver
+SL050,ZIM - Branch 50,2017-09-27,Bronze
+SL051,MSC - Branch 51,2021-10-23,Bronze
+SL052,Wan Hai - Branch 52,2016-09-13,Bronze
+SL053,Wan Hai - Branch 53,2021-08-20,Silver
+SL054,Hapag-Lloyd - Branch 54,2022-03-26,Silver
+SL055,ZIM - Branch 55,2021-11-23,Gold
+SL056,Wan Hai - Branch 56,2018-12-19,Bronze
+SL057,Evergreen - Branch 57,2020-05-12,Bronze
+SL058,Maersk - Branch 58,2021-10-06,Silver
+SL059,Wan Hai - Branch 59,2021-07-20,Silver
+SL060,ONE - Branch 60,2016-11-05,Silver
+SL061,Evergreen - Branch 61,2019-12-25,Gold
+SL062,MSC - Branch 62,2021-10-25,Bronze
+SL063,Wan Hai - Branch 63,2016-08-17,Silver
+SL064,Maersk - Branch 64,2017-07-23,Bronze
+SL065,Hapag-Lloyd - Branch 65,2017-02-16,Gold
+SL066,Evergreen - Branch 66,2017-10-18,Silver
+SL067,Wan Hai - Branch 67,2019-03-27,Bronze
+SL068,Hapag-Lloyd - Branch 68,2016-04-07,Platinum
+SL069,Cosco - Branch 69,2017-04-16,Silver
+SL070,Hapag-Lloyd - Branch 70,2022-04-21,Platinum
+SL071,CMA CGM - Branch 71,2021-11-05,Bronze
+SL072,ZIM - Branch 72,2019-11-28,Platinum
+SL073,MSC - Branch 73,2016-06-09,Platinum
+SL074,CMA CGM - Branch 74,2020-12-15,Gold
+SL075,Evergreen - Branch 75,2017-04-10,Silver
+SL076,Cosco - Branch 76,2021-08-15,Bronze
+SL077,Yang Ming - Branch 77,2018-07-03,Bronze
+SL078,Cosco - Branch 78,2021-11-13,Silver
+SL079,ONE - Branch 79,2019-06-01,Bronze
+SL080,Evergreen - Branch 80,2017-04-17,Gold
+SL081,CMA CGM - Branch 81,2021-02-08,Bronze
+SL082,CMA CGM - Branch 82,2020-02-01,Bronze
+SL083,Cosco - Branch 83,2018-07-30,Silver
+SL084,Evergreen - Branch 84,2019-07-10,Platinum
+SL085,Yang Ming - Branch 85,2019-02-19,Platinum
+SL086,ZIM - Branch 86,2015-09-06,Platinum
+SL087,MSC - Branch 87,2016-07-22,Platinum
+SL088,Wan Hai - Branch 88,2021-08-06,Gold
+SL089,MSC - Branch 89,2023-01-09,Silver
+SL090,ONE - Branch 90,2019-01-26,Silver
+SL091,Evergreen - Branch 91,2016-08-22,Platinum
+SL092,Maersk - Branch 92,2022-11-06,Bronze
+SL093,Yang Ming - Branch 93,2022-10-16,Silver
+SL094,Evergreen - Branch 94,2018-05-10,Bronze
+SL095,ONE - Branch 95,2020-11-20,Platinum
+SL096,Cosco - Branch 96,2021-08-26,Bronze
+SL097,Hapag-Lloyd - Branch 97,2020-03-14,Gold
+SL098,Wan Hai - Branch 98,2016-07-17,Gold
+SL099,Maersk - Branch 99,2019-06-25,Gold
+SL100,Maersk - Branch 100,2019-11-26,Bronze
