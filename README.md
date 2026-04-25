@@ -239,9 +239,14 @@ The Gold Layer is the final consumption layer, consisting of SQL Views that tran
 |fiscal_year|The adjusted financial year based on organizational accounting cycles, often used for budget tracking. |
 
 
-
-
-
+### Table Name: dim_equipment
+|Column Names| Description|
+|------------|------------|
+|equipment_sk| Surrogate primary key of dimension table dim_equipment|
+|crane_id| Unique identifier for a particular crane|
+|equipment_type| Tyep of container handling crane|
+|energy_source| Energy source whether hybrid/diesel or electric|
+|asset_priority_level| Categorical calculated column determining priority of crane whether high or normal|
 
 
 
