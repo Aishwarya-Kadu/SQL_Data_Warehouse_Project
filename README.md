@@ -313,6 +313,15 @@ The Gold Layer Galaxy Schema enables the terminal to answer critical business qu
 - **Infrastructure Readiness:** Using the is_reefer_eligible flag in the locations dimension, the terminal can perform 'Gap Analysis' between the number of arriving refrigerated units (via vessel manifests) and the available powered slots in the yard, preventing cargo spoilage.
 
 
+## How to run the project
+To replicate this Data Warehouse environment, execute the scripts in the following order. This ensures all dependencies (schemas, tables, and procedures) are created before data is transformed.
+
+Step 1: Environment Setup
+Run the script '1.Create DB and Schema.sql' to initialize the Database and the three-tier schema architecture (Bronze, Silver, Gold).
+
+Step 2: Bronze Layer (Ingestion)
+Create the landing tables and the ingestion logic.
+1. Run '2. Bronze Layer Table Creation.sql' to create the raw landing zone.
 
 
 
