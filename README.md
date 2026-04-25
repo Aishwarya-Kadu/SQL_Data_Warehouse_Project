@@ -6,6 +6,7 @@ This is an end-to-end Galaxy Schema Data Warehouse that integrates siloed termin
 - Project Overview
 - Tools
 - Data Overview
+- Architecture Framework
 
 ## Project Overview
 This project simulates the development of a professional-grade Data Warehouse for a container terminal, bridging the gap between raw maritime operations and strategic business intelligence. By transforming fragmented logs from **Terminal Operating System (TOS)**, **Enterprise Resource Planning System (ERP)**, **Customer Relationship Management System (CRM)** and **Master Data logs** into a centralized Gaalxy Schema, the project enables real-time tracking of operational efficiency, revenue accuracy and asset health.
@@ -107,7 +108,13 @@ This data warehouse is built from seven CSV datasets which are sourced from Term
 |zone_priority| Defines whether a particular location is high priority or not|
 
 
-## The Architecture
+## Architecture Framework: Medallion Architecture
+This project follows Medallion Architecture to ensure data integrity, traaceability and high-performance reporting. By organising the data into three distinct layers, we transform raw, fragmented maritime logs into a refined 'Single Source of Truth'.
+
+### Bronze Layer: Raw Staging
+
+
+
 
 
 
